@@ -68,19 +68,10 @@ rustup override set stable
 rustup update stable
 source $HOME/.cargo/env
 cargo install alacritty
-#apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3
-#cargo build --release
-
-#infocmp alacritty
-#tic -xe alacritty,alacritty-direct extra/alacritty.info
-#cp target/release/alacritty /usr/local/bin
-
-#mkdir -p /usr/local/share/man/man1
-#gzip -c extra/alacritty.man | sudo tee /usr/local/share/man/man1/alacritty.1.gz > /dev/null
-
-#mkdir -p ~/.bash_completion
-#cp extra/completions/alacritty.bash ~/.bash_completion/alacritty
-#echo "source ~/.bash_completion/alacritty" >> ~/.bashrc
+which alacritty #find out where the alacritty is
+cp /path/to/alacritty /usr/bin/alacritty #this make alacritty work for every user
+update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 40 #set alacritty as one of the x-terminal-emulator
+update-alternatives --config x-terminal-emulator #then select alacritty as default x-terminal-emulator
 ```
 
 
