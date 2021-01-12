@@ -155,14 +155,14 @@ font:
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
-  #offset:
+  offset:
     x: 0
     y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
   # right, increasing `y` moves the glyph upward.
-  #glyph_offset:
+  glyph_offset:
     x: 0
     y: 0
 
@@ -178,7 +178,7 @@ font:
 # Colors (Tomorrow Night)
 colors:
   # Default colors
-  #primary:
+  primary:
     background: '0x282828'
     foreground: '0xebdbb2'
 
@@ -351,7 +351,7 @@ selection:
 
 cursor:
   # Cursor style
-  #style:
+  style:
     # Cursor shape
     #
     # Values for `shape`:
