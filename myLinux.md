@@ -36,7 +36,7 @@ vim /etc/sudoers
 #user ALL=(ALL) ALL
 
 #install X11
-apt install xorg
+apt install xorg xorg-dev
 
 #install display-manager
 apt install lightdm
