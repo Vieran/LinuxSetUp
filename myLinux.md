@@ -90,5 +90,6 @@ syntax on
 set shiftwidth=4
 set autoindent
 set tabstop=4
+#for more information, please check Minuscule/Record/about_Tools/customize_Vim.md
 ```
 
