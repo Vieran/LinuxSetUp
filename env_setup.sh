@@ -11,7 +11,7 @@ pushd ${PACKAGES}
 [ ! -f "nvim-linux64.tar.gz" ] && wget https://github.com/neovim/neovim/releases/download/v0.4.4/nvim-linux64.tar.gz
 pushd ${APPS}
 [ -e "nvim-linux64" ] && rm -rf nvim-linux64 && echo "nvim-linux64 exists, remove and re unzip"
-tar -zxvf ${PACKAGES}/nvim-linux64.tar.gz .
+tar -zxvf ${PACKAGES}/nvim-linux64.tar.gz
 pushd nvim-linux64 && mkdir nvim && pushd nvim && wget https://github.com/Vieran/LinuxSetUp/raw/main/init.vim
 mkdir autoload && pushd autoload && wget https://github.com/junegunn/vim-plug/raw/master/plug.vim
 # install scripts in vim
