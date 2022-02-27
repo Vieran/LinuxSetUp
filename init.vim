@@ -4,6 +4,8 @@ set tabstop=4
 set shiftwidth=4
 set smartindent
 set scrolloff=4
+syntax on
+set incsearch
 "set foldmethod=indent
 
 call plug#begin()
