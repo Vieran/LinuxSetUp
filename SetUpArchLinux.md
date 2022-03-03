@@ -1,6 +1,4 @@
-# myLinux
-
-*incase of display problem in Chinese, this file should be written in English*
+# Setup ArchLinux
 
 ### APT
 
@@ -73,23 +71,3 @@ cp /path/to/alacritty /usr/bin/alacritty #this make alacritty work for every use
 update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 40 #set alacritty as one of the x-terminal-emulator
 update-alternatives --config x-terminal-emulator #then select alacritty as default x-terminal-emulator
 ```
-
-
-
-### NeoVim
-
-```bash
-#set nvim
-mkdir ~/.config/nvim
-nvim ~/.config/nvim/init.vim
-
-#add the following into file
-set number
-set relativenumber
-syntax on
-set shiftwidth=4
-set autoindent
-set tabstop=4
-#for more information, please check Minuscule/Record/about_Tools/customize_Vim.md
-```
-

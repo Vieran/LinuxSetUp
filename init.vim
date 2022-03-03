@@ -6,6 +6,7 @@ set smartindent
 set scrolloff=4
 syntax on
 set incsearch
+set hlsearch
 "set foldmethod=indent
 
 call plug#begin()
