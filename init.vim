@@ -7,18 +7,21 @@ set scrolloff=4
 syntax on
 set incsearch
 set hlsearch
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 "set foldmethod=indent
 
-call plug#begin()
 
+call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'mileszs/ack.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'morhetz/gruvbox'
-
 call plug#end()
+
 
 "======================================================================================
 "---------------------------------------FOR PLUGINS------------------------------------
