@@ -110,5 +110,14 @@ export PATH=\${NODEJS}/bin:\$PATH
 
 CCLS=\${APPS}/ccls
 export PATH=\${CCLS}/bin:\$PATH
+
+LLVM=\${APPS}/llvm-version
+export PATH=\${LLVM}/bin:\$PATH
+export PATH=\${LLVM}/libexec:\$PATH
+export LIBRARY_PATH=\${LLVM}/lib:\$LIBRARY_PATH
+export LD_LIBRARY_PATH=\${LLVM}/lib:\$LD_LIBRARY_PATH
+export CPLUS_INCLUDE_PATH=\${LLVM}/include:\$CPLUS_INCLUDE_PATH
+export C_INCLUDE_PATH=\${LLVM}/include:\$C_INCLUDE_PATH
+export MANPATH=\${LLVM}/share:\$MANPATH
 EOF
 ```
