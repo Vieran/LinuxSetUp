@@ -36,6 +36,7 @@ cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 
 "setting for coc.nvim in lightline
+set laststatus=2
 let g:lightline = {
 	\ 'colorscheme': 'gruvbox',
 	\ 'active': {
