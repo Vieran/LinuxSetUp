@@ -19,7 +19,7 @@ cd ${APPS}
 [ -e "nvim-linux64" ] && rm -rf nvim-linux64 && echo "nvim-linux64 exists, remove and re decompress"
 tar -zxvf ${PACKAGES}/nvim-linux64.tar.gz
 cd nvim-linux64 && mkdir nvim && cd nvim && wget https://github.com/Vieran/LinuxSetUp/raw/main/init.vim
-mkdir autoload && cd autoload && wget https://github.com/junegunn/vim-plug/raw/master/plug.vim
+mkdir autoload && cd autoload && wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 
