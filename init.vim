@@ -82,12 +82,8 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 "==================================end coc.nvim settings===============================
 
-"setting for find references and definition
-nnoremap <silent><F2> <C-]>
-nnoremap <silent><F3> <c-o>
-"nmap <silent> <F4> <Plug>(coc-references)
-"nn <silent> xc :call CocLocations('ccls','$ccls/call')<cr>
-"nn <silent> xC :call CocLocations('ccls','$ccls/call',{'callee':v:true})<cr>
+"go back
+nnoremap <silent> gb <c-o>
 
 "setting for color
 if &term == 'screen'
