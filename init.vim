@@ -12,6 +12,12 @@ if has("autocmd")
 endif
 "set foldmethod=indent
 
+" for Gvim on windows
+"set guioptions=""
+"set t_Co=256
+"set t_ut=""
+"set ttyscroll=1
+
 
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
